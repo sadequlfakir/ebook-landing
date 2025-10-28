@@ -1,331 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Ebook</title>
-    <meta name="description" content="Learn about Ebook - Digital Business Ledger & Accounting App and our mission to help business owners manage their finances">
-    
+    <meta
+      name="description"
+      content="Learn about Ebook - Digital Business Ledger & Accounting App and our mission to help business owners manage their finances"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <!-- Custom Tailwind Config -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#732C9D',
-                        secondary: '#868686',
-                        success: '#1FA804',
-                        warn: '#FBB101',
-                        error: '#F03131',
-                    },
-                    fontFamily: {
-                        'roboto': ['Roboto', 'sans-serif'],
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#732C9D',
+              secondary: '#868686',
+              success: '#1FA804',
+              warn: '#FBB101',
+              error: '#F03131',
+            },
+            fontFamily: {
+              roboto: ['Roboto', 'sans-serif'],
+            },
+          },
+        },
+      };
     </script>
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #732C9D 0%, #9C4BC4 100%);
-        }
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #732c9d 0%, #9c4bc4 100%);
+      }
     </style>
-</head>
-<body class="bg-gray-50">
+  </head>
+  <body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-sm border-b">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-xl">E</span>
-                    </div>
-                    <span class="text-gray-900 font-bold text-xl">Ebook</span>
-                </div>
-                <a href="index.html" class="text-primary hover:text-primary/80 transition-colors">
-                    ← Back to Home
-                </a>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-xl">E</span>
             </div>
+            <span class="text-gray-900 font-bold text-xl">Ebook</span>
+          </div>
+          <a
+            href="index.html"
+            class="text-primary hover:text-primary/80 transition-colors"
+          >
+            ← Back to Home
+          </a>
         </div>
+      </div>
     </nav>
 
     <!-- Header -->
     <section class="gradient-bg py-16">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl font-bold text-white mb-4">About Ebook</h1>
-            <p class="text-xl text-white/90">Empowering business owners with simple, powerful financial management</p>
-        </div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-bold text-white mb-4">About Ebook</h1>
+        <p class="text-xl text-white/90">
+          Empowering business owners with simple, powerful financial management
+        </p>
+      </div>
     </section>
 
     <!-- Mission Section -->
     <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-right">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
-                    <p class="text-lg text-gray-700 mb-6">
-                        At Ebook, we believe that managing business finances shouldn't be complicated. Our mission is to provide business owners with a simple, intuitive, and powerful digital ledger that makes financial management accessible to everyone.
-                    </p>
-                    <p class="text-lg text-gray-700 mb-6">
-                        We understand that small and medium businesses need reliable tools to track their income, manage expenses, and maintain accurate records. That's why we've created Ebook - a comprehensive solution that combines the simplicity of traditional bookkeeping with the power of modern technology.
-                    </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-gray-900">Simple & Secure</h3>
-                            <p class="text-gray-600">Easy to use, secure by design</p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-left" class="bg-gray-50 p-8 rounded-2xl">
-                    <div class="text-center">
-                        <div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
-                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">What is Ebook?</h3>
-                        <p class="text-gray-700">
-                            Ebook is a simple and powerful platform that helps you manage your daily income, expenses, customers, and business records — just like a digital ledger. It's designed to make your business accounting easy, fast, and secure.
-                        </p>
-                    </div>
-                </div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+            <p class="text-lg text-gray-700 mb-6">
+              At Ebook, we believe that managing business finances shouldn't be
+              complicated. Our mission is to provide business owners with a
+              simple, intuitive, and powerful digital ledger that makes
+              financial management accessible to everyone.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+              We understand that small and medium businesses need reliable tools
+              to track their income, manage expenses, and maintain accurate
+              records. That's why we've created Ebook - a comprehensive solution
+              that combines the simplicity of traditional bookkeeping with the
+              power of modern technology.
+            </p>
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  class="w-6 h-6 text-primary"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900">Simple & Secure</h3>
+                <p class="text-gray-600">Easy to use, secure by design</p>
+              </div>
             </div>
+          </div>
+          <div data-aos="fade-left" class="bg-gray-50 p-8 rounded-2xl">
+            <div class="text-center">
+              <div
+                class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <svg
+                  class="w-12 h-12 text-primary"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                What is Ebook?
+              </h3>
+              <p class="text-gray-700">
+                Ebook is a simple and powerful platform that helps you manage
+                your daily income, expenses, customers, and business records —
+                just like a digital ledger. It's designed to make your business
+                accounting easy, fast, and secure.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Values Section -->
     <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    The principles that guide everything we do at Ebook
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Value 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Simplicity</h3>
-                    <p class="text-gray-600">We believe in making complex financial management simple and accessible to everyone, regardless of their technical expertise.</p>
-                </div>
-                
-                <!-- Value 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Security</h3>
-                    <p class="text-gray-600">Your business data is precious. We implement the highest security standards to protect your financial information.</p>
-                </div>
-                
-                <!-- Value 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Reliability</h3>
-                    <p class="text-gray-600">We're committed to providing a stable, reliable platform that you can count on for your business operations.</p>
-                </div>
-                
-                <!-- Value 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">User-Centric</h3>
-                    <p class="text-gray-600">Every feature we build is designed with our users in mind, focusing on their real-world needs and challenges.</p>
-                </div>
-                
-                <!-- Value 5 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="500">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
-                    <p class="text-gray-600">We continuously innovate to bring you the latest features and improvements in business financial management.</p>
-                </div>
-                
-                <!-- Value 6 -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg" data-aos="fade-up" data-aos-delay="600">
-                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Transparency</h3>
-                    <p class="text-gray-600">We believe in transparent pricing, clear communication, and honest relationships with our users.</p>
-                </div>
-            </div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            The principles that guide everything we do at Ebook
+          </p>
         </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Value 1 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Simplicity</h3>
+            <p class="text-gray-600">
+              We believe in making complex financial management simple and
+              accessible to everyone, regardless of their technical expertise.
+            </p>
+          </div>
+
+          <!-- Value 2 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Security</h3>
+            <p class="text-gray-600">
+              Your business data is precious. We implement the highest security
+              standards to protect your financial information.
+            </p>
+          </div>
+
+          <!-- Value 3 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Reliability</h3>
+            <p class="text-gray-600">
+              We're committed to providing a stable, reliable platform that you
+              can count on for your business operations.
+            </p>
+          </div>
+
+          <!-- Value 4 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">User-Centric</h3>
+            <p class="text-gray-600">
+              Every feature we build is designed with our users in mind,
+              focusing on their real-world needs and challenges.
+            </p>
+          </div>
+
+          <!-- Value 5 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
+            <p class="text-gray-600">
+              We continuously innovate to bring you the latest features and
+              improvements in business financial management.
+            </p>
+          </div>
+
+          <!-- Value 6 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Transparency</h3>
+            <p class="text-gray-600">
+              We believe in transparent pricing, clear communication, and honest
+              relationships with our users.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Team Section -->
     <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Founded by a team of passionate developers and business experts who understand the challenges of financial management
-                </p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-right">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Why We Built Ebook</h3>
-                    <p class="text-lg text-gray-700 mb-6">
-                        After years of working with small business owners, we noticed a common problem: existing accounting software was either too complex for daily use or too simple to be truly useful. Business owners needed something in between.
-                    </p>
-                    <p class="text-lg text-gray-700 mb-6">
-                        We set out to create a solution that combines the simplicity of traditional bookkeeping with the power of modern technology. Ebook was born from this vision - a digital ledger that's easy to use but powerful enough to handle real business needs.
-                    </p>
-                    <div class="bg-primary/10 p-6 rounded-lg">
-                        <p class="text-gray-700 italic">
-                            "Our goal is to make financial management so simple that every business owner can focus on what they do best - running their business."
-                        </p>
-                        <p class="text-gray-600 mt-4 font-medium">- The Ebook Team</p>
-                    </div>
-                </div>
-                
-                <div data-aos="fade-left" class="bg-gray-50 p-8 rounded-2xl">
-                    <div class="space-y-6">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-success rounded-full flex items-center justify-center">
-                                <span class="text-white font-bold">1</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Identify the Problem</h4>
-                                <p class="text-gray-600">Complex accounting software wasn't meeting real business needs</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                                <span class="text-white font-bold">2</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Design the Solution</h4>
-                                <p class="text-gray-600">Create a simple yet powerful digital ledger</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-warn rounded-full flex items-center justify-center">
-                                <span class="text-white font-bold">3</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Build & Launch</h4>
-                                <p class="text-gray-600">Develop and release Ebook to help business owners</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Founded by a team of passionate developers and business experts who
+            understand the challenges of financial management
+          </p>
         </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">
+              Why We Built Ebook
+            </h3>
+            <p class="text-lg text-gray-700 mb-6">
+              After years of working with small business owners, we noticed a
+              common problem: existing accounting software was either too
+              complex for daily use or too simple to be truly useful. Business
+              owners needed something in between.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+              We set out to create a solution that combines the simplicity of
+              traditional bookkeeping with the power of modern technology. Ebook
+              was born from this vision - a digital ledger that's easy to use
+              but powerful enough to handle real business needs.
+            </p>
+            <div class="bg-primary/10 p-6 rounded-lg">
+              <p class="text-gray-700 italic">
+                "Our goal is to make financial management so simple that every
+                business owner can focus on what they do best - running their
+                business."
+              </p>
+              <p class="text-gray-600 mt-4 font-medium">- The Ebook Team</p>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" class="bg-gray-50 p-8 rounded-2xl">
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-success rounded-full flex items-center justify-center"
+                >
+                  <span class="text-white font-bold">1</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900">Identify the Problem</h4>
+                  <p class="text-gray-600">
+                    Complex accounting software wasn't meeting real business
+                    needs
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-primary rounded-full flex items-center justify-center"
+                >
+                  <span class="text-white font-bold">2</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900">Design the Solution</h4>
+                  <p class="text-gray-600">
+                    Create a simple yet powerful digital ledger
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <div
+                  class="w-12 h-12 bg-warn rounded-full flex items-center justify-center"
+                >
+                  <span class="text-white font-bold">3</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900">Build & Launch</h4>
+                  <p class="text-gray-600">
+                    Develop and release Ebook to help business owners
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="py-16 gradient-bg">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div data-aos="fade-up">
-                <h2 class="text-3xl font-bold text-white mb-6">Get in Touch</h2>
-                <p class="text-xl text-white/90 mb-8">
-                    Have questions about Ebook? We'd love to hear from you!
-                </p>
-                
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-                            </svg>
-                        </div>
-                        <h3 class="font-bold text-white mb-2">Email</h3>
-                        <p class="text-white/80">support@ebook.mobile.app</p>
-                    </div>
-                    
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.759 8.241 16 9.007 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 18a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.532a1 1 0 00-1.414-1.414l-.705.705a2 2 0 000 2.828l.705-.705zm4.708-2.532a1 1 0 00-1.414-1.414l-.705.705a2 2 0 000 2.828l.705-.705zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 18a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <h3 class="font-bold text-white mb-2">Help Center</h3>
-                        <p class="text-white/80">help@ebook.mobile.app</p>
-                    </div>
-                    
-                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <h3 class="font-bold text-white mb-2">Business</h3>
-                        <p class="text-white/80">business@ebook.mobile.app</p>
-                    </div>
-                </div>
-                
-                <a href="index.html" class="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors transform hover:scale-105 inline-block">
-                    Back to Home
-                </a>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-white mb-6">Get in Touch</h2>
+          <p class="text-xl text-white/90 mb-8">
+            Have questions about Ebook? We'd love to hear from you!
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+              <div
+                class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-white mb-2">Email</h3>
+              <p class="text-white/80">support@ebook.mobile.app</p>
             </div>
+
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+              <div
+                class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.759 8.241 16 9.007 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 18a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.532a1 1 0 00-1.414-1.414l-.705.705a2 2 0 000 2.828l.705-.705zm4.708-2.532a1 1 0 00-1.414-1.414l-.705.705a2 2 0 000 2.828l.705-.705zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 18a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-white mb-2">Help Center</h3>
+              <p class="text-white/80">help@ebook.mobile.app</p>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+              <div
+                class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3 class="font-bold text-white mb-2">Business</h3>
+              <p class="text-white/80">business@ebook.mobile.app</p>
+            </div>
+          </div>
+
+          <a
+            href="index.html"
+            class="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors transform hover:scale-105 inline-block"
+          >
+            Back to Home
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="flex items-center justify-center space-x-2 mb-4">
-                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                    <span class="text-white font-bold text-lg">E</span>
-                </div>
-                <span class="text-white font-bold text-lg">Ebook</span>
-            </div>
-            <p class="text-gray-400">&copy; 2024 Ebook. All rights reserved. Made with ❤️ for business owners.</p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="flex items-center justify-center space-x-2 mb-4">
+          <div
+            class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center"
+          >
+            <span class="text-white font-bold text-lg">E</span>
+          </div>
+          <span class="text-white font-bold text-lg">Ebook</span>
         </div>
+        <p class="text-gray-400">
+          &copy; 2024 Ebook. All rights reserved. Made with ❤️ for business
+          owners.
+        </p>
+      </div>
     </footer>
 
     <!-- Initialize AOS -->
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
     </script>
-</body>
+  </body>
 </html>
